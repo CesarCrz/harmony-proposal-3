@@ -8,78 +8,128 @@ import { staggerContainer, fadeUpItem, fadeUp, viewport } from "@/lib/animations
 
 const services = [
   {
-    name: "Uñas Acrílicas",
+    name: "Uñas Acrílicas / Polygel",
     guarantee: true,
-    faqs: [
-      {
-        q: "¿Cada cuánto necesito retoque?",
-        a: "Recomendamos retoque cada 2-3 semanas, dependiendo del crecimiento de tu uña natural. Mantener el retoque a tiempo prolonga la duración y apariencia del servicio.",
-      },
-      {
-        q: "¿Cuánto dura el servicio?",
-        a: "Una aplicación completa toma aproximadamente 1.5 a 2 horas. Los retoques son más rápidos, alrededor de 45-60 minutos.",
-      },
-      {
-        q: "¿Qué cuidados debo tener?",
-        a: "Evita exponer las uñas a productos químicos agresivos y usa guantes al lavar. No las uses como herramienta y aplica aceite de cutícula diariamente.",
-      },
-      {
-        q: "¿Qué cubre la garantía de 3 días?",
-        a: "Si en los primeros 3 días presentas una rotura, levantamiento o problema en el acabado, lo corregimos sin costo adicional. Solo necesitas contactarnos.",
-      },
-    ],
-  },
-  {
-    name: "Extensión de Pestañas",
-    guarantee: true,
-    faqs: [
-      {
-        q: "¿Cuánto tiempo duran las pestañas?",
-        a: "Con los cuidados adecuados, las extensiones duran entre 3 y 4 semanas. El ciclo natural de caída de pestañas también influye en la duración.",
-      },
-      {
-        q: "¿Cada cuánto necesito retoque?",
-        a: "Recomendamos retoque cada 2-3 semanas para mantener la densidad y apariencia perfecta del trabajo inicial.",
-      },
-      {
-        q: "¿Qué cuidados debo seguir?",
-        a: "Evita mojar las pestañas las primeras 24-48 horas. No las frotes, no uses máscara con aceite y duerme boca arriba en lo posible.",
-      },
-    ],
-  },
-  {
-    name: "Rubber / Gel",
-    guarantee: false,
-    faqs: [
-      {
-        q: "¿Qué es el sistema Rubber?",
-        a: "Es una base de gel flexible que protege la uña natural, previene roturas y sirve como base ideal para cualquier diseño o esmalte semipermanente.",
-      },
-      {
-        q: "¿Cuánto tiempo dura?",
-        a: "El sistema Rubber dura entre 2 y 3 semanas con los cuidados normales del día a día.",
-      },
-      {
-        q: "¿Se puede combinar con diseños?",
-        a: "Sí. Es perfectamente compatible con nail art, esmalte semipermanente, piedras y cualquier técnica decorativa.",
-      },
-    ],
-  },
-  {
-    name: "Manicure & Pedicure Spa",
-    guarantee: false,
     faqs: [
       {
         q: "¿Qué incluye el servicio?",
-        a: "Incluye baño relajante, limado y forma, retiro de cutícula, masaje con crema nutritiva y aplicación de esmalte regular o semipermanente.",
+        a: "Uñas acrílicas o polygel en técnica escultural, mani express y gel de color liso. Diseños completamente personalizados para cada clienta.",
       },
       {
-        q: "¿Cuánto dura la sesión?",
-        a: "El manicure spa dura aproximadamente 45-60 minutos. El pedicure spa puede tomar entre 60 y 75 minutos.",
+        q: "¿Cada cuánto debo hacer mantenimiento?",
+        a: "Lo recomendable para asegurar una excelente calidad es de 15 a 20 días máximo. Esto aplica en acrílico, polygel, rubber gel, sistema híbrido y gel semi permanente.",
       },
       {
-        q: "¿Con qué frecuencia se recomienda?",
-        a: "Idealmente cada 2-3 semanas para mantener tus manos y pies siempre perfectos y bien cuidados.",
+        q: "¿Qué cuidados debo tener?",
+        a: "Evita exponer las uñas a productos químicos agresivos y usa guantes al lavar. No las uses como herramienta y aplica aceite de cutícula regularmente.",
+      },
+      {
+        q: "¿Qué cubre la garantía de 3 días?",
+        a: "Aplica para levantamiento prematuro de gel o acrílico durante los primeros 3 días después de la aplicación. Contáctanos y lo corregimos sin costo.",
+      },
+    ],
+  },
+  {
+    name: "Extensiones de Pestañas",
+    guarantee: false,
+    faqs: [
+      {
+        q: "¿Qué técnicas manejan?",
+        a: "Trabajamos técnica clásica (1:1), híbrida, tecnológica/volumen y mega volumen artesanal. En tu consulta te orientamos sobre cuál es la ideal para ti.",
+      },
+      {
+        q: "¿Qué cuidados debo seguir?",
+        a: "Evita mojar las pestañas las primeras 24–48 horas. No las frotes ni uses productos con aceite, y duerme boca arriba en lo posible.",
+      },
+    ],
+  },
+  {
+    name: "Nivelación Rubber Gel / Gel Semi Permanente",
+    guarantee: true,
+    faqs: [
+      {
+        q: "¿Qué es la nivelación con rubber gel?",
+        a: "Nivelación en uña natural con rubber gel, mani express y gel color liso. Protege y fortalece la uña natural dándole un acabado impecable.",
+      },
+      {
+        q: "¿Qué es el gel semi permanente?",
+        a: "Gel de color liso sobre uña natural. Un servicio sencillo que aporta brillo y color duradero sin necesidad de extensiones ni acrílico.",
+      },
+      {
+        q: "¿Cada cuánto se hace el mantenimiento?",
+        a: "Lo recomendable es de 15 a 20 días máximo para mantener la uña protegida y con buen acabado.",
+      },
+      {
+        q: "¿Qué cubre la garantía de 3 días?",
+        a: "Aplica para levantamiento prematuro de gel durante los primeros 3 días después de la aplicación. Contáctanos y lo corregimos sin costo.",
+      },
+    ],
+  },
+  {
+    name: "Sistema Híbrido",
+    guarantee: true,
+    faqs: [
+      {
+        q: "¿Qué es el sistema híbrido?",
+        a: "Plataforma de polygel en técnica escultural o sobre uña natural, nivelación de rubber gel, mani express y gel de color liso. Lo mejor de varios sistemas en uno.",
+      },
+      {
+        q: "¿Cuál es la diferencia con el acrílico?",
+        a: "Combina la resistencia del polygel con la flexibilidad del rubber gel, ofreciendo mayor durabilidad y un acabado más natural que el acrílico tradicional.",
+      },
+      {
+        q: "¿Cada cuánto se hace el mantenimiento?",
+        a: "Entre 15 y 20 días máximo, igual que el resto de sistemas de uñas.",
+      },
+      {
+        q: "¿Qué cubre la garantía de 3 días?",
+        a: "Aplica para levantamiento prematuro de gel o acrílico durante los primeros 3 días después de la aplicación. Contáctanos y lo corregimos sin costo.",
+      },
+    ],
+  },
+  {
+    name: "Manicura Rusa & Manicura Spa",
+    guarantee: false,
+    faqs: [
+      {
+        q: "¿Qué incluye la Manicura Rusa?",
+        a: "Limpieza de cutícula profunda en seco y gel de color liso. Técnica de precisión con fresa eléctrica para un acabado ultra limpio y definido.",
+      },
+      {
+        q: "¿Qué incluye la Manicura Spa?",
+        a: "Sales, exfoliante, mascarilla, limpieza de cutícula, corte, cuadratura y gel de color liso. Una experiencia completa de consentimiento para tus manos.",
+      },
+      {
+        q: "¿Cada cuánto se recomienda?",
+        a: "Cada 3 a 4 semanas para mantener la cutícula bien definida y las manos siempre perfectas.",
+      },
+    ],
+  },
+  {
+    name: "Pedicure Spa",
+    guarantee: false,
+    faqs: [
+      {
+        q: "¿Qué incluye el Pedicure Spa?",
+        a: "Sales, exfoliante, mascarilla, limpieza de canales, limpieza de cutícula, limpieza de callosidades y gel de color liso.",
+      },
+      {
+        q: "¿Cada cuánto se recomienda?",
+        a: "Idealmente cada 3 a 4 semanas para mantener tus pies siempre bien cuidados y presentables.",
+      },
+    ],
+  },
+  {
+    name: "Lash Lifting",
+    guarantee: false,
+    faqs: [
+      {
+        q: "¿Qué es el lash lifting?",
+        a: "Rizado de pestañas naturales. Levanta y ondula tu pestaña propia dándole volumen y apertura a la mirada sin necesidad de extensiones.",
+      },
+      {
+        q: "¿Cuánto dura el efecto?",
+        a: "Entre 6 y 8 semanas, dependiendo del ciclo natural de crecimiento de tus pestañas.",
       },
     ],
   },
@@ -88,12 +138,12 @@ const services = [
     guarantee: false,
     faqs: [
       {
-        q: "¿Qué métodos utilizan?",
-        a: "Trabajamos con hilo, cera o pinza según el tipo de ceja y preferencia. El método se elige para maximizar resultados y minimizar molestia.",
+        q: "¿Qué incluye el servicio?",
+        a: "Diseño con visagismo de tus cejas, contorno de hilos con pigmento, depilación de ceja y laminado. Realzamos tu mirada con la forma perfecta para tu rostro.",
       },
       {
-        q: "¿Cuánto tiempo dura el diseño?",
-        a: "El efecto del diseño dura entre 3 y 4 semanas. Recomendamos visita mensual para mantenimiento.",
+        q: "¿Cuánto dura el mantenimiento?",
+        a: "Aproximadamente cada 3 a 4 semanas para mantener el diseño y la definición de la ceja.",
       },
     ],
   },
@@ -250,7 +300,7 @@ export default function ServicesFAQ() {
                             </svg>
                             <p className="font-[var(--font-nunito)] font-normal text-[14px] text-[#848484] leading-relaxed">
                               <span className="font-semibold text-[#E91E8C]">Garantía de 3 días:</span>{" "}
-                              Si no quedas 100% satisfecha con tu servicio, contáctanos dentro de los primeros 3 días y lo corregimos sin costo adicional.
+                              Aplica para levantamiento prematuro de gel o acrílico durante los primeros 3 días después de la aplicación. Contáctanos y lo corregimos sin costo.
                             </p>
                           </motion.div>
                         )}

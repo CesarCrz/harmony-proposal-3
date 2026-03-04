@@ -13,8 +13,8 @@ const contactDetails = [
       </svg>
     ),
     label: "Dirección",
-    value: "Zona Sur, Guadalajara, Jalisco",
-    sub: "Cerca de ITESO",
+    value: "Av. Agrícola 641 Local 1",
+    sub: "Parques del Bosque, San Pedro Tlaquepaque, Gdl.",
     href: "https://www.google.com/maps/search/?api=1&query=Harmony+Nails+%26+Lashes+Guadalajara",
   },
   {
@@ -46,7 +46,7 @@ const contactDetails = [
     ),
     label: "Horarios",
     value: "Lunes – Sábado",
-    sub: "10:00 am – 8:00 pm",
+    sub: "10:00 am – 7:00 pm",
     href: null,
   },
 ];
@@ -74,7 +74,7 @@ export default function ContactMap() {
             variants={slideRight}
             className="font-[var(--font-nunito)] font-normal text-[16px] md:text-[18px] text-[#848484] max-w-[440px] leading-relaxed"
           >
-            Estamos en la zona sur de Guadalajara, cerca de ITESO. Agenda tu cita y ven a vivir la experiencia Harmony.
+            Estamos en Parques del Bosque, San Pedro Tlaquepaque. Agenda tu cita y ven a vivir la experiencia Harmony.
           </motion.p>
         </motion.div>
 
