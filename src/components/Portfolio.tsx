@@ -8,10 +8,10 @@ import {
 } from "@/lib/animations";
 
 const portfolioItems = [
-  { image: "/images/content-image-1.png", title: "Diseño de Uñas Acrílicas" },
-  { image: "/images/content-image-2.png", title: "Pestañas Profesionales" },
-  { image: "/images/content-image-1.png", title: "Pedicure Spa" },
-  { image: "/images/content-image-2.png", title: "Manicure Francés" },
+  { image: "https://res.cloudinary.com/dwoau0ajc/image/upload/v1772660733/IMG_8057_uxryru_leeqk1.jpg", title: "Diseño de Uñas Acrílicas" },
+  { image: "https://res.cloudinary.com/dwoau0ajc/image/upload/v1773075900/IMG_9144_m84vki_javmkd.jpg", title: "Pestañas Profesionales" },
+  { image: "https://res.cloudinary.com/dwoau0ajc/image/upload/v1773078582/IMG_1892_ybbcii_1_iz9aoy.jpg", title: "Pedicure Spa" },
+  { image: "https://res.cloudinary.com/dwoau0ajc/image/upload/v1772658568/IMG_2174_snbzve_njkmao.jpg", title: "Manicure Francés" },
 ];
 
 export default function Portfolio() {

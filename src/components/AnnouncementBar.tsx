@@ -18,7 +18,7 @@ export default function AnnouncementBar() {
         ✦
       </motion.span>
       <p className="font-[var(--font-nunito)] font-semibold text-[16px] text-[#1d1d1e] text-center">
-        ¡Bienvenida a Harmony Nails & Lashes! — 20% de descuento en tu primera visita
+        ¡Bienvenida a Harmony Nails & Lashes! — <i>donde la belleza se encuentra con la excelencia</i>
       </p>
       <motion.span
         className="text-[#E91E8C] text-lg"

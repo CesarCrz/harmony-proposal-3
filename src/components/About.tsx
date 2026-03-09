@@ -24,13 +24,13 @@ export default function About() {
             variants={slideLeft}
             className="font-[var(--font-playfair)] font-medium text-[32px] md:text-[48px] text-[#1d1d1e] tracking-[0.96px] leading-tight max-w-[558px]"
           >
-            Desatando la Creatividad: Un Paraíso para tus Uñas
+            Nació del Amor, Creció con Pasión
           </motion.h2>
           <motion.p
             variants={slideRight}
             className="font-[var(--font-nunito)] font-normal text-[16px] md:text-[18px] text-[#848484] max-w-[558px] leading-relaxed"
           >
-            Entra a nuestro vibrante y acogedor espacio, diseñado para despertar tu imaginación y espíritu artístico. Siente la energía y pasión que irradian nuestras especialistas, dedicadas a convertir tus sueños en realidad.
+            Kathya y Victoria se conocieron trabajando en el mismo lugar. De ese ambiente que comenzó a pesarles nació la decisión más valiente de sus vidas: crear Harmony. Con 17 años de experiencia combinada y el apoyo de sus familias, transformaron un espacio que otros veían apagado en el salón más cálido de Guadalajara. Hoy, a casi tres años en su local actual, siguen construyendo su sueño — diseño a diseño, clienta a clienta.
           </motion.p>
         </motion.div>
 
@@ -48,7 +48,7 @@ export default function About() {
             whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
           >
             <Image
-              src="/images/content-image-1.png"
+              src="https://res.cloudinary.com/dwoau0ajc/image/upload/v1772659286/IMG_1510_a5zdh9.png"
               alt="Harmony Nails - diseños de uñas"
               fill
               className="object-cover transition-transform duration-500 hover:scale-105"
@@ -61,7 +61,7 @@ export default function About() {
             whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
           >
             <Image
-              src="/images/content-image-2.png"
+              src="https://res.cloudinary.com/dwoau0ajc/image/upload/v1773016406/IMG_9622_cgltfm_1_udxabt.jpg"
               alt="Harmony Nails - ambiente del salón"
               fill
               className="object-cover transition-transform duration-500 hover:scale-105"
@@ -74,7 +74,7 @@ export default function About() {
             whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
           >
             <Image
-              src="/images/content-image-1.png"
+              src="https://res.cloudinary.com/dwoau0ajc/image/upload/v1773079758/IMG_1508_u4j1al.png"
               alt="Harmony Nails - trabajos"
               fill
               className="object-cover transition-transform duration-500 hover:scale-105"

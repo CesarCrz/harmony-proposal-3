@@ -4,8 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { slideLeft, slideRight, viewport } from "@/lib/animations";
+import { useRef, useState } from "react";
 
 export default function Offers() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const toggleVideo = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
   return (
     <section className="bg-[#f8efe8] py-8 md:py-10">
       <div className="max-w-[1140px] mx-auto px-6">
@@ -22,7 +36,7 @@ export default function Offers() {
           >
             <div className="relative w-full md:w-[268px] h-[200px] md:h-[285px] flex-shrink-0 overflow-hidden">
               <Image
-                src="/images/content-image-1.png"
+                src="https://res.cloudinary.com/dwoau0ajc/image/upload/v1772642045/IMG_9362_pniyle.jpg"
                 alt="Uñas acrílicas"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
@@ -32,8 +46,8 @@ export default function Offers() {
               <div className="flex flex-col gap-3">
                 <p className="font-[var(--font-nunito)] font-normal text-[16px] text-[#848484]">
                   <span>Ahorra hasta </span>
-                  <span className="text-[#1d1d1e] font-semibold">20% Off</span>
-                  <span> en tu primera visita</span>
+                  <span className="text-[#1d1d1e] font-semibold">20% de stress</span>
+                  <span> desde tu primera visita</span>
                 </p>
                 <h3 className="font-[var(--font-nunito)] font-semibold text-[28px] md:text-[36px] text-[#1d1d1e] leading-tight max-w-[246px]">
                   Color Único de Esmalte de Uñas
@@ -59,13 +73,24 @@ export default function Offers() {
             whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.08)", transition: { duration: 0.25 } }}
             className="bg-[#f6e6d6] flex flex-col md:flex-row items-stretch flex-1"
           >
-            <div className="relative w-full md:w-[268px] h-[200px] md:h-[285px] flex-shrink-0 overflow-hidden">
-              <Image
-                src="/images/content-image-2.png"
-                alt="Diseños nuevos"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
+            <div className="relative w-full md:w-[268px] h-[200px] md:h-[285px] flex-shrink-0 overflow-hidden cursor-pointer">
+              <video
+                ref={videoRef}
+                src="https://res.cloudinary.com/dwoau0ajc/video/upload/v1772642059/IMG_1695_asce3q.mov"
+                autoPlay
+                loop
+                muted
+                playsInline
+                onClick={toggleVideo}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
+              {!isPlaying && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/30 pointer-events-none">
+                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              )}
             </div>
             <div className="flex flex-col gap-6 justify-center px-6 py-8">
               <div className="flex flex-col gap-3">

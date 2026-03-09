@@ -206,9 +206,9 @@ export default function WhyUs() {
                 </Link>
               </motion.div>
             </div>
-            <div className="relative w-full max-w-[326px] h-[280px] md:h-[382px] mt-8">
+            <div className="relative w-full max-w-[326px] h-[280px] md:h-[382px] mt-8 overflow-hidden rounded-t-[999px]">
               <Image
-                src="/images/hero-image.svg"
+                src="https://res.cloudinary.com/dwoau0ajc/image/upload/v1773082890/WhyUs-main_hepzms.jpg"
                 alt="Agenda tu cita"
                 fill
                 className="object-cover object-top"

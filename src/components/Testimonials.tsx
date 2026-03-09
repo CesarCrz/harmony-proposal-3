@@ -12,7 +12,7 @@ const testimonials = [
     location: "Guadalajara, Jal.",
   },
   {
-    avatar: "/images/testimonial-avatar-2.png",
+    avatar: "/images/testimonial-avatar-1.svg",
     quote: '"El resultado final de mi manicure fue absolutamente impresionante. La técnica aplicó el esmalte con habilidad, dejando mis uñas con un acabado perfecto y brillante. Recibí muchos cumplidos y no pude evitar presumirlas con orgullo."',
     name: "Clienta frecuente",
     location: "San Pedro Tlaquepaque",

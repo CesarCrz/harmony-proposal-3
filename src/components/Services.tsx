@@ -8,9 +8,9 @@ import {
 } from "@/lib/animations";
 
 const services = [
-  { image: "/images/content-image-1.png", title: "Uñas Acrílicas", href: "#servicios" },
-  { image: "/images/content-image-2.png", title: "Pestañas", href: "#servicios" },
-  { image: "/images/content-image-1.png", title: "Manicure & Pedicure", href: "#servicios" },
+  { image: "https://res.cloudinary.com/dwoau0ajc/image/upload/v1772642048/IMG_8635_mydqsd.jpg", title: "Uñas Acrílicas", href: "#servicios" },
+  { image: "https://res.cloudinary.com/dwoau0ajc/image/upload/v1772661771/IMG_9206_u4qak0_eiwm3e.jpg", title: "Pestañas", href: "#servicios" },
+  { image: "https://res.cloudinary.com/dwoau0ajc/image/upload/v1773075593/IMG_1867_expszn_qsvdse.jpg", title: "Manicure & Pedicure", href: "#servicios" },
 ];
 
 export default function Services() {

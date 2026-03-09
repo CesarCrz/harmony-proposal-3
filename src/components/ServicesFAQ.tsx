@@ -88,11 +88,11 @@ const services = [
     ],
   },
   {
-    name: "Manicura Rusa & Manicura Spa",
+    name: "Manicura Russa & Manicura Spa",
     guarantee: false,
     faqs: [
       {
-        q: "¿Qué incluye la Manicura Rusa?",
+        q: "¿Qué incluye la Manicura Russa?",
         a: "Limpieza de cutícula profunda en seco y gel de color liso. Técnica de precisión con fresa eléctrica para un acabado ultra limpio y definido.",
       },
       {
@@ -207,7 +207,7 @@ export default function ServicesFAQ() {
           >
             Resolvemos tus dudas antes de tu cita. Los servicios con{" "}
             <span className="text-[#E91E8C] font-semibold">Garantía 3 días</span>{" "}
-            incluyen corrección gratuita si no quedas 100% satisfecha.
+            incluyen corrección gratuita según el servicio. <b>Consultar condiciones. *</b>
           </motion.p>
         </motion.div>
 

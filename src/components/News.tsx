@@ -7,16 +7,16 @@ import { staggerContainer, fadeUpItem, slideLeft, slideRight, viewport } from "@
 
 const trends = [
   {
-    image: "/images/content-image-1.png",
+    image: "https://res.cloudinary.com/dwoau0ajc/image/upload/v1772660972/IMG_8155_jsovz9_pxs9jl.jpg",
     tag: "Uñas Acrílicas",
     season: "Primavera 2026",
-    specialist: "Kattya (Kath)",
+    specialist: "Kathya (Kath)",
     title: "Flores y Pasteles: El Nail Art que Domina esta Primavera",
     excerpt:
       "Los diseños florales con tonos pastel y acentos de color son la tendencia que nuestras clientas más piden esta temporada. Uñas que hablan por sí solas.",
   },
   {
-    image: "/images/content-image-2.png",
+    image: "https://res.cloudinary.com/dwoau0ajc/image/upload/v1773082330/news_lashes_gkmvch.jpg",
     tag: "Extensión de Pestañas",
     season: "Temporada 2026",
     specialist: "Victoria",

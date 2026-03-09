@@ -1,20 +1,20 @@
 "use client";
 
-import Image from "next/image";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { slideLeft, slideRight, staggerContainer, fadeUpItem, viewport } from "@/lib/animations";
 
 const founders = [
   {
-    image: "/images/content-image-1.png",
-    name: "Kattya (Kath)",
+    video: "https://res.cloudinary.com/dwoau0ajc/video/upload/v1773081620/video_kath_xrueji.mp4",
+    name: "Kathya (Kath)",
     role: "Fundadora & Especialista en Uñas",
     experience: "10 años de experiencia",
-    bio: "La visionaria que impulsa cada decisión creativa. Kattya transforma ideas en diseños únicos y atrevidos, poniendo pasión en cada trazo y detalle.",
+    bio: "La visionaria que impulsa cada decisión creativa. Kathya transforma ideas en diseños únicos y atrevidos, poniendo pasión en cada trazo y detalle.",
     variants: slideLeft,
   },
   {
-    image: "/images/content-image-2.png",
+    video: "https://res.cloudinary.com/dwoau0ajc/video/upload/v1773081621/video_vic_rajdwu.mp4",
     name: "Victoria",
     role: "Fundadora & Especialista en Belleza",
     experience: "7 años de experiencia",
@@ -22,6 +22,52 @@ const founders = [
     variants: slideRight,
   },
 ];
+
+function FounderVideo({ src, name }: { src: string; name: string }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  function handleClick() {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      video.play();
+      setIsPlaying(true);
+    } else {
+      video.pause();
+      setIsPlaying(false);
+    }
+  }
+
+  return (
+    <div
+      className="relative w-full h-[420px] md:h-[520px] overflow-hidden cursor-pointer"
+      onClick={handleClick}
+    >
+      <video
+        ref={videoRef}
+        src={src}
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-label={name}
+        className="w-full h-full object-cover"
+      />
+
+      {/* Play icon overlay — visible only when paused */}
+      {!isPlaying && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition-opacity">
+          <div className="w-16 h-16 rounded-full bg-white/85 flex items-center justify-center">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="#1d1d1e">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Team() {
   return (
@@ -62,15 +108,7 @@ export default function Team() {
               whileHover={{ y: -6, transition: { duration: 0.25 } }}
               className="flex flex-col gap-6"
             >
-              {/* Image — taller for premium feel */}
-              <div className="relative w-full h-[420px] md:h-[520px] overflow-hidden">
-                <Image
-                  src={founder.image}
-                  alt={founder.name}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
-                />
-              </div>
+              <FounderVideo src={founder.video} name={founder.name} />
 
               {/* Info */}
               <div className="flex flex-col gap-4 px-1">

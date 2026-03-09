@@ -36,7 +36,7 @@ export default function Pricing() {
             className="relative w-full lg:w-[461px] h-[350px] lg:h-[618px] flex-shrink-0 overflow-hidden"
             whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
           >
-            <Image src="https://res.cloudinary.com/dwoau0ajc/image/upload/v1771901649/harmony_5_cwbvv3-removebg-preview_cagjq9.png" alt="Uñas Acrílicas" fill className="object-cover" />
+            <Image src="https://res.cloudinary.com/dwoau0ajc/image/upload/v1773081302/rotate_IMG_8156_avafem_yepz8q_kyg6ra.jpg" alt="Uñas Acrílicas" fill className="object-cover" />
           </motion.div>
 
           <motion.div
@@ -154,7 +154,7 @@ export default function Pricing() {
             className="relative w-full lg:w-[461px] h-[350px] lg:h-[618px] flex-shrink-0 overflow-hidden"
             whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
           >
-            <Image src="/images/content-image-2.png" alt="Spa Harmony" fill className="object-cover" />
+            <Image src="https://res.cloudinary.com/dwoau0ajc/image/upload/v1772659453/IMG_9644_iij76j_gtdnxa.jpg" alt="Spa Harmony" fill className="object-cover" />
           </motion.div>
         </div>
       </div>

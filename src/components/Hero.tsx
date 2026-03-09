@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const HERO_IMAGE = "https://res.cloudinary.com/dwoau0ajc/image/upload/v1770660559/harmony_5_cwbvv3.jpg";
+const HERO_IMAGE = "https://res.cloudinary.com/dwoau0ajc/image/upload/v1773079339/Gemini_Generated_Image_6ew7xo6ew7xo6ew7_1_rva0qh.png";
 
 const words = "¡Haz que tus uñas luzcan hermosas!".split(" ");
 
